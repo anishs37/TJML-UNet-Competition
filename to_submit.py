@@ -35,7 +35,7 @@ with open('submission13.csv', 'w', encoding='UTF8') as f:
         d_use = torch.device('cpu')
 
         net.to(device=d_use)
-        net.load_state_dict(torch.load("./checkpoints/checkpoint_epoch18.pth", map_location=d_use))
+        net.load_state_dict(torch.load("./checkpoints/checkpoint_epoch20.pth", map_location=d_use))
 
         img = img_counter
         pil_img = im.fromarray(img)
